@@ -33,7 +33,7 @@ public class TestService {
             });
         }
         executorService.shutdown();
-        executorService.awaitTermination(1, TimeUnit.MINUTES);
+        executorService.awaitTermination(10, TimeUnit.MINUTES);
         System.out.println(map);
     }
 
